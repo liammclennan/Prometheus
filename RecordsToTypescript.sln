@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RecordsToTypescript", "RecordsToTypescript\RecordsToTypescript.fsproj", "{CB3B6305-FF0D-4E24-ADDD-2B978803F486}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Target", "Target\Target.fsproj", "{816E16D8-CA5D-4777-B0EE-1F681BD7543C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB3B6305-FF0D-4E24-ADDD-2B978803F486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB3B6305-FF0D-4E24-ADDD-2B978803F486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB3B6305-FF0D-4E24-ADDD-2B978803F486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB3B6305-FF0D-4E24-ADDD-2B978803F486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{816E16D8-CA5D-4777-B0EE-1F681BD7543C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816E16D8-CA5D-4777-B0EE-1F681BD7543C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{816E16D8-CA5D-4777-B0EE-1F681BD7543C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{816E16D8-CA5D-4777-B0EE-1F681BD7543C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
