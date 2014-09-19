@@ -8,11 +8,11 @@
     <ProjectGuid>cb3b6305-ff0d-4e24-addd-2b978803f486</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>RecordsToTypescript</RootNamespace>
-    <AssemblyName>RecordsToTypescript</AssemblyName>
+    <AssemblyName>Prometheus</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>RecordsToTypescript</Name>
+    <Name>Prometheus</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +47,7 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fire.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
   </ItemGroup>
