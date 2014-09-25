@@ -7,6 +7,7 @@ let private convertType fn : string =
     match fn with
         | "String" -> "string"
         | "Int32" -> "number"
+        | "Guid" -> "string"
         | _ -> fn
 
 let private fieldToCtorDef (f:PropertyInfo) : string =
