@@ -1,4 +1,4 @@
-﻿module Fire
+﻿module Prometheus
 
 open System.Reflection
 open Microsoft.FSharp.Reflection

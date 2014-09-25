@@ -1,18 +1,22 @@
 ﻿open System.Reflection
 open System.IO
-open Fire
+open Prometheus
 
 let getResult fn =
     try
         fn
             |> System.IO.Path.GetFullPath 
-            |> Assembly.LoadFile 
+            |> Assembly.LoadFrom
             |> convertAssembly 
             |> Choice1Of2 
     with 
+        | :? System.Reflection.ReflectionTypeLoadException as ex ->
+            (fn, ex.LoaderExceptions) 
+                ||> sprintf "Failed to load %s. Message: %A" 
+                |> Choice2Of2
         | ex -> 
-            (fn, ex.Message) 
-                ||> sprintf "Failed to load %s. Message: %s" 
+            (fn, ex) 
+                ||> sprintf "Failed to load %s. Message: %A" 
                 |> Choice2Of2
 
 [<EntryPoint>]
